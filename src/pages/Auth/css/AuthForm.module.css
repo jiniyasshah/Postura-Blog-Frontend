@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------- Left Part Containing Intro ------------------------------------- */
+.auth__title__container {
+  @apply flex w-1/2 bg-gradient-to-tr from-[#262626] to-[#1a1a1a] justify-around items-center;
+}
+
+.auth__title__heading__text {
+  @apply text-white font-bold text-5xl font-sans;
+}
+.auth__title__paragraph__text {
+  @apply text-white mt-1 text-lg;
+}
+
+/* ------------------------------- Right Part Containing Form ------------------------------------- */
+
+.auth__form__container {
+  @apply flex w-1/2 justify-center items-center bg-[#e6e6e6];
+}
+.auth__form {
+  @apply bg-white p-10 rounded-2xl shadow-lg flex items-center justify-center flex-col;
+}
+.auth__form__heading__text {
+  @apply text-gray-800 font-bold text-3xl mb-1 pt-3;
+}
+.auth__form__paragraph__text {
+  @apply text-lg font-normal text-gray-600 mb-7;
+}
+
+/* ------------------------------- Form Input Field  ------------------------------------- */
+.auth__form__inputfield__container {
+  @apply flex items-center border-2 py-2 px-3 rounded-2xl mb-5 text-lg;
+}
+.auth__form__inputfield {
+  @apply pl-2 ps-2 py-0 outline-none border-none md:min-w-[300px] h-[30px]  rounded-lg;
+}
+
+/* ------------------------------- Form Button Field ------------------------------------- */
+.auth__form__buttonfield {
+  @apply block w-full text-lg bg-blue-600 py-3 hover:bg-blue-700 rounded-2xl text-white mb-4;
+}
+
+/* ------------------------------- Forgot Password ------------------------------------- */
+.auth__forgot_password {
+  @apply text-[1rem]  hover:text-blue-500 cursor-pointer;
+}

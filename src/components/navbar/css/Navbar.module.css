@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------- Logo --------------------------- */
+.navbar {
+  @apply bg-[#262626]  border-b border-gray-600;
+}
+
+.navbar__container {
+  @apply flex items-center justify-between px-4 mx-4;
+}
+
+.navbar__logo__container {
+  @apply flex items-center w-[300px]  space-x-4 rtl:space-x-reverse;
+}
+
+.navbar__logo__text {
+  @apply text-2xl font-semibold whitespace-nowrap text-white;
+}
+
+.navbar__logo__icon {
+  @apply h-[3rem] rounded-full hidden;
+}
+
+.navbar__search__icon {
+  @apply text-[0.9rem] text-white rounded-full bg-[#404040]  flex items-center justify-center min-w-12 h-12; /* Example size */
+}
+
+/*  --------------------------- Dock --------------------------- */
+.dock__container {
+  @apply font-medium  md:px-5  flex flex-col p-5 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#262626] md:justify-center  md:min-w-[350px];
+}
+
+.dock__item__container {
+  @apply block  px-3 text-gray-900 rounded  hover:bg-gray-100  md:hover:bg-transparent md:hover:text-[#f2f2f2] md:p-0 md:flex md:flex-row md:text-[#bfbfbf] md:text-[1rem] md:my-[26px];
+}
+
+.dock__item__text {
+  @apply pl-3;
+}
+
+.dock__item__icon {
+}
+
+.dock__item__line {
+  @apply absolute bottom-0  w-0  h-[2px] bg-blue-600;
+}
+
+/* --------------------------- Authentication ------------------------- */
+.navbar_auth_container {
+  @apply hidden min-w-[300px]   md:w-auto  md:flex md:flex-row md:space-x-2 justify-end;
+}
+
+.navbar__login__btn {
+  @apply block py-2 md:hover:bg-[#ebebe0]   md:px-5  text-gray-900 bg-white md:border md:border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg  me-2 md:shadow-sm;
+}
+
+.navbar__signup__btn {
+  @apply block py-2 focus:outline-none text-white bg-purple-700  hover:bg-purple-800  focus:ring-4 focus:ring-purple-100 font-medium rounded-lg text-sm px-5  dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 md:shadow-sm;
+}
